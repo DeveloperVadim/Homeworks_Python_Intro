@@ -14,7 +14,6 @@
 
 my_list = [5, "string", 0.15, True, None]
 def my_type(el):
-    for el in range(len(my_list)):
-        print(type(my_list[el]))
-    return
+    for el in my_list:
+        print(type(el))
 my_type(my_list)
