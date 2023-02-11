@@ -7,3 +7,14 @@
 Результат: 2 1 4 3
 Введите целые числа через пробел: 1 2 3
 Результат: 2 1 3 """
+
+
+my_str = input("Введите целые числа через пробел:")
+my_num = []
+el = 0
+for el in range(my_str.count(' ') + 1):
+    my_num = my_str.split()
+    for el in range(int(len(my_num)/2)):
+        my_num[el], my_num[el + 1] = my_num [el + 1], my_num[el]
+        el += 2
+print(*my_num)
