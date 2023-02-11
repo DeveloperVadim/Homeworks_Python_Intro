@@ -6,9 +6,6 @@
 n + nn + nnn = 369 """
 
 
-a = int(input('Введите число:'))
-b = 2*a
-c = 3*a
-print(f'n + nn + nnn = {"{}{}{}".format(a,b,c)}')
-# или
-print(f'n + nn + nnn = {str(a)+str(b)+str(c)}')
+n = int(input("Введите число - "))
+total = (n + int(str(n) + str(n)) + int(str(n) + str(n)+ str(n)))
+print("Сумма чисел n + nn + nnn - %d" % total)
